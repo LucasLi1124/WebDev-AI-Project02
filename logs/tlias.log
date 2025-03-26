@@ -1153,3 +1153,705 @@ java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '18612236361'
 2025-03-26 01:09:42.607 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
 2025-03-26 01:09:42.610 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2025-03-26 01:09:42.614 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-03-26 01:32:42.138 [main] INFO  c.llf.TliasWebManagementApplication - Starting TliasWebManagementApplication using Java 21.0.6 with PID 47056 (C:\code\WebDev-AI-Project02\tlias-web-management\target\classes started by 14764 in C:\code\WebDev-AI-Project02)
+2025-03-26 01:32:42.139 [main] INFO  c.llf.TliasWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-26 01:32:42.906 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-26 01:32:42.916 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-26 01:32:42.917 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-26 01:32:42.917 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-26 01:32:42.957 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-26 01:32:42.957 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 780 ms
+2025-03-26 01:32:43.423 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-26 01:32:43.436 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-03-26 01:32:43.441 [main] INFO  c.llf.TliasWebManagementApplication - Started TliasWebManagementApplication in 1.597 seconds (process running for 2.597)
+2025-03-26 01:33:00.348 [http-nio-8080-exec-5] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-26 01:33:00.348 [http-nio-8080-exec-5] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-26 01:33:00.349 [http-nio-8080-exec-5] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-03-26 01:33:00.368 [http-nio-8080-exec-5] INFO  com.llf.controller.DeptController - 查询全部的部门数据
+2025-03-26 01:33:00.380 [http-nio-8080-exec-1] INFO  com.llf.controller.EmpController - 分页查询，当前页码：EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)，每页条数：{}
+2025-03-26 01:33:00.382 [http-nio-8080-exec-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-03-26 01:33:00.611 [http-nio-8080-exec-5] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7a46b68a
+2025-03-26 01:33:00.613 [http-nio-8080-exec-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-03-26 01:42:45.815 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-26 01:42:45.821 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-03-26 01:42:45.825 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-03-26 01:42:45.830 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-03-26 01:46:28.025 [main] INFO  c.llf.TliasWebManagementApplication - Starting TliasWebManagementApplication using Java 21.0.6 with PID 29776 (C:\code\WebDev-AI-Project02\tlias-web-management\target\classes started by 14764 in C:\code\WebDev-AI-Project02)
+2025-03-26 01:46:28.027 [main] INFO  c.llf.TliasWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-26 01:46:28.685 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-26 01:46:28.693 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-26 01:46:28.694 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-26 01:46:28.694 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-26 01:46:28.724 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-26 01:46:28.724 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 672 ms
+2025-03-26 01:46:29.150 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-26 01:46:29.162 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-03-26 01:46:29.168 [main] INFO  c.llf.TliasWebManagementApplication - Started TliasWebManagementApplication in 1.426 seconds (process running for 2.068)
+2025-03-26 01:46:58.450 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-26 01:46:58.450 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-26 01:46:58.451 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-03-26 01:46:58.468 [http-nio-8080-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-03-26 01:47:34.716 [http-nio-8080-exec-3] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-03-26 01:50:07.470 [http-nio-8080-exec-7] INFO  com.llf.controller.UploadController - 文件上传，文件名：李林峰,18,org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@4bb89247
+2025-03-26 01:50:07.494 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-26 01:50:07.505 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-03-26 03:36:41.615 [main] INFO  c.llf.TliasWebManagementApplication - Starting TliasWebManagementApplication using Java 21.0.6 with PID 14020 (C:\code\WebDev-AI-Project02\tlias-web-management\target\classes started by 14764 in C:\code\WebDev-AI-Project02)
+2025-03-26 03:36:41.617 [main] INFO  c.llf.TliasWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-26 03:36:42.586 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-26 03:36:42.603 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-26 03:36:42.604 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-26 03:36:42.605 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-26 03:36:42.644 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-26 03:36:42.644 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 987 ms
+2025-03-26 03:36:43.129 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-26 03:36:43.141 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-03-26 03:36:43.147 [main] INFO  c.llf.TliasWebManagementApplication - Started TliasWebManagementApplication in 1.8 seconds (process running for 2.857)
+2025-03-26 03:37:13.479 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-26 03:37:13.480 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-26 03:37:13.480 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-03-26 03:37:13.509 [http-nio-8080-exec-2] INFO  com.llf.controller.UploadController - 文件上传，
+2025-03-26 03:37:13.514 [http-nio-8080-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.llf.utils.AliyunOSSOperator.upload(byte[], String)" because "this.aliyunOSSOperator" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.llf.utils.AliyunOSSOperator.upload(byte[], String)" because "this.aliyunOSSOperator" is null
+	at com.llf.controller.UploadController.upload(UploadController.java:19)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-03-26 03:37:52.338 [http-nio-8080-exec-5] INFO  com.llf.controller.UploadController - 文件上传，证件照.jpg
+2025-03-26 03:37:52.354 [http-nio-8080-exec-5] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.llf.utils.AliyunOSSOperator.upload(byte[], String)" because "this.aliyunOSSOperator" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.llf.utils.AliyunOSSOperator.upload(byte[], String)" because "this.aliyunOSSOperator" is null
+	at com.llf.controller.UploadController.upload(UploadController.java:19)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-03-26 03:39:39.866 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-26 03:39:39.870 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-03-26 03:39:49.164 [main] INFO  c.llf.TliasWebManagementApplication - Starting TliasWebManagementApplication using Java 21.0.6 with PID 54204 (C:\code\WebDev-AI-Project02\tlias-web-management\target\classes started by 14764 in C:\code\WebDev-AI-Project02)
+2025-03-26 03:39:49.165 [main] INFO  c.llf.TliasWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-26 03:39:49.812 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-26 03:39:49.820 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-26 03:39:49.822 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-26 03:39:49.822 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-26 03:39:49.857 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-26 03:39:49.858 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 657 ms
+2025-03-26 03:39:50.283 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-26 03:39:50.295 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-03-26 03:39:50.299 [main] INFO  c.llf.TliasWebManagementApplication - Started TliasWebManagementApplication in 1.406 seconds (process running for 2.051)
+2025-03-26 03:39:52.504 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-26 03:39:52.506 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-26 03:39:52.507 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-03-26 03:39:52.538 [http-nio-8080-exec-1] INFO  com.llf.controller.UploadController - 文件上传，证件照.jpg
+2025-03-26 03:39:54.897 [http-nio-8080-exec-1] WARN  com.aliyun.oss - [Server]Unable to execute HTTP request: You have no right to access this object because of bucket acl.
+[ErrorCode]: AccessDenied
+[RequestId]: 67E3BD5A1253C53733F0CFF8
+[HostId]: java-ai.oss-cn-beijing.aliyuncs.com
+[EC]: 0003-00000001
+[ResponseError]:
+<?xml version="1.0" encoding="UTF-8"?>
+<Error>
+  <Code>AccessDenied</Code>
+  <Message>You have no right to access this object because of bucket acl.</Message>
+  <RequestId>67E3BD5A1253C53733F0CFF8</RequestId>
+  <HostId>java-ai.oss-cn-beijing.aliyuncs.com</HostId>
+  <EC>0003-00000001</EC>
+  <RecommendDoc>https://api.aliyun.com/troubleshoot?q=0003-00000001</RecommendDoc>
+</Error>
+
+2025-03-26 03:39:54.902 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: com.aliyun.oss.OSSException: You have no right to access this object because of bucket acl.
+[ErrorCode]: AccessDenied
+[RequestId]: 67E3BD5A1253C53733F0CFF8
+[HostId]: java-ai.oss-cn-beijing.aliyuncs.com
+[EC]: 0003-00000001
+[ResponseError]:
+<?xml version="1.0" encoding="UTF-8"?>
+<Error>
+  <Code>AccessDenied</Code>
+  <Message>You have no right to access this object because of bucket acl.</Message>
+  <RequestId>67E3BD5A1253C53733F0CFF8</RequestId>
+  <HostId>java-ai.oss-cn-beijing.aliyuncs.com</HostId>
+  <EC>0003-00000001</EC>
+  <RecommendDoc>https://api.aliyun.com/troubleshoot?q=0003-00000001</RecommendDoc>
+</Error>
+] with root cause
+com.aliyun.oss.OSSException: You have no right to access this object because of bucket acl.
+[ErrorCode]: AccessDenied
+[RequestId]: 67E3BD5A1253C53733F0CFF8
+[HostId]: java-ai.oss-cn-beijing.aliyuncs.com
+[EC]: 0003-00000001
+[ResponseError]:
+<?xml version="1.0" encoding="UTF-8"?>
+<Error>
+  <Code>AccessDenied</Code>
+  <Message>You have no right to access this object because of bucket acl.</Message>
+  <RequestId>67E3BD5A1253C53733F0CFF8</RequestId>
+  <HostId>java-ai.oss-cn-beijing.aliyuncs.com</HostId>
+  <EC>0003-00000001</EC>
+  <RecommendDoc>https://api.aliyun.com/troubleshoot?q=0003-00000001</RecommendDoc>
+</Error>
+
+	at com.aliyun.oss.common.utils.ExceptionFactory.createOSSException(ExceptionFactory.java:103)
+	at com.aliyun.oss.internal.OSSErrorResponseHandler.handle(OSSErrorResponseHandler.java:92)
+	at com.aliyun.oss.common.comm.ServiceClient.handleResponse(ServiceClient.java:284)
+	at com.aliyun.oss.common.comm.ServiceClient.sendRequestImpl(ServiceClient.java:156)
+	at com.aliyun.oss.common.comm.ServiceClient.sendRequest(ServiceClient.java:85)
+	at com.aliyun.oss.internal.OSSOperation.send(OSSOperation.java:134)
+	at com.aliyun.oss.internal.OSSOperation.doOperation(OSSOperation.java:192)
+	at com.aliyun.oss.internal.OSSOperation.doOperation(OSSOperation.java:153)
+	at com.aliyun.oss.internal.OSSObjectOperation.writeObjectInternal(OSSObjectOperation.java:1173)
+	at com.aliyun.oss.internal.OSSObjectOperation.putObject(OSSObjectOperation.java:107)
+	at com.aliyun.oss.OSSClient.putObject(OSSClient.java:627)
+	at com.aliyun.oss.OSSClient.putObject(OSSClient.java:611)
+	at com.aliyun.oss.OSSClient.putObject(OSSClient.java:605)
+	at com.llf.utils.AliyunOSSOperator.upload(AliyunOSSOperator.java:42)
+	at com.llf.controller.UploadController.upload(UploadController.java:22)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-03-26 03:40:43.148 [http-nio-8080-exec-4] INFO  com.llf.controller.UploadController - 文件上传，证件照.jpg
+2025-03-26 03:40:44.745 [http-nio-8080-exec-4] WARN  com.aliyun.oss - [Server]Unable to execute HTTP request: You have no right to access this object because of bucket acl.
+[ErrorCode]: AccessDenied
+[RequestId]: 67E3BD8CE80D01383723FE35
+[HostId]: java-ai.oss-cn-beijing.aliyuncs.com
+[EC]: 0003-00000001
+[ResponseError]:
+<?xml version="1.0" encoding="UTF-8"?>
+<Error>
+  <Code>AccessDenied</Code>
+  <Message>You have no right to access this object because of bucket acl.</Message>
+  <RequestId>67E3BD8CE80D01383723FE35</RequestId>
+  <HostId>java-ai.oss-cn-beijing.aliyuncs.com</HostId>
+  <EC>0003-00000001</EC>
+  <RecommendDoc>https://api.aliyun.com/troubleshoot?q=0003-00000001</RecommendDoc>
+</Error>
+
+2025-03-26 03:40:44.746 [http-nio-8080-exec-4] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: com.aliyun.oss.OSSException: You have no right to access this object because of bucket acl.
+[ErrorCode]: AccessDenied
+[RequestId]: 67E3BD8CE80D01383723FE35
+[HostId]: java-ai.oss-cn-beijing.aliyuncs.com
+[EC]: 0003-00000001
+[ResponseError]:
+<?xml version="1.0" encoding="UTF-8"?>
+<Error>
+  <Code>AccessDenied</Code>
+  <Message>You have no right to access this object because of bucket acl.</Message>
+  <RequestId>67E3BD8CE80D01383723FE35</RequestId>
+  <HostId>java-ai.oss-cn-beijing.aliyuncs.com</HostId>
+  <EC>0003-00000001</EC>
+  <RecommendDoc>https://api.aliyun.com/troubleshoot?q=0003-00000001</RecommendDoc>
+</Error>
+] with root cause
+com.aliyun.oss.OSSException: You have no right to access this object because of bucket acl.
+[ErrorCode]: AccessDenied
+[RequestId]: 67E3BD8CE80D01383723FE35
+[HostId]: java-ai.oss-cn-beijing.aliyuncs.com
+[EC]: 0003-00000001
+[ResponseError]:
+<?xml version="1.0" encoding="UTF-8"?>
+<Error>
+  <Code>AccessDenied</Code>
+  <Message>You have no right to access this object because of bucket acl.</Message>
+  <RequestId>67E3BD8CE80D01383723FE35</RequestId>
+  <HostId>java-ai.oss-cn-beijing.aliyuncs.com</HostId>
+  <EC>0003-00000001</EC>
+  <RecommendDoc>https://api.aliyun.com/troubleshoot?q=0003-00000001</RecommendDoc>
+</Error>
+
+	at com.aliyun.oss.common.utils.ExceptionFactory.createOSSException(ExceptionFactory.java:103)
+	at com.aliyun.oss.internal.OSSErrorResponseHandler.handle(OSSErrorResponseHandler.java:92)
+	at com.aliyun.oss.common.comm.ServiceClient.handleResponse(ServiceClient.java:284)
+	at com.aliyun.oss.common.comm.ServiceClient.sendRequestImpl(ServiceClient.java:156)
+	at com.aliyun.oss.common.comm.ServiceClient.sendRequest(ServiceClient.java:85)
+	at com.aliyun.oss.internal.OSSOperation.send(OSSOperation.java:134)
+	at com.aliyun.oss.internal.OSSOperation.doOperation(OSSOperation.java:192)
+	at com.aliyun.oss.internal.OSSOperation.doOperation(OSSOperation.java:153)
+	at com.aliyun.oss.internal.OSSObjectOperation.writeObjectInternal(OSSObjectOperation.java:1173)
+	at com.aliyun.oss.internal.OSSObjectOperation.putObject(OSSObjectOperation.java:107)
+	at com.aliyun.oss.OSSClient.putObject(OSSClient.java:627)
+	at com.aliyun.oss.OSSClient.putObject(OSSClient.java:611)
+	at com.aliyun.oss.OSSClient.putObject(OSSClient.java:605)
+	at com.llf.utils.AliyunOSSOperator.upload(AliyunOSSOperator.java:42)
+	at com.llf.controller.UploadController.upload(UploadController.java:22)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-03-26 03:41:54.548 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-26 03:41:54.551 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-03-26 03:41:57.316 [main] INFO  c.llf.TliasWebManagementApplication - Starting TliasWebManagementApplication using Java 21.0.6 with PID 17768 (C:\code\WebDev-AI-Project02\tlias-web-management\target\classes started by 14764 in C:\code\WebDev-AI-Project02)
+2025-03-26 03:41:57.320 [main] INFO  c.llf.TliasWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-26 03:41:57.979 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-26 03:41:57.986 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-26 03:41:57.987 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-26 03:41:57.988 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-26 03:41:58.017 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-26 03:41:58.018 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 663 ms
+2025-03-26 03:41:58.463 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-26 03:41:58.473 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-03-26 03:41:58.479 [main] INFO  c.llf.TliasWebManagementApplication - Started TliasWebManagementApplication in 1.436 seconds (process running for 2.085)
+2025-03-26 03:42:01.398 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-26 03:42:01.398 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-26 03:42:01.398 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-03-26 03:42:01.431 [http-nio-8080-exec-2] INFO  com.llf.controller.UploadController - 文件上传，证件照.jpg
+2025-03-26 03:42:04.251 [http-nio-8080-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: com.aliyun.oss.OSSException: The specified bucket does not exist.
+[ErrorCode]: NoSuchBucket
+[RequestId]: 67E3BDDCB980BA35302341AE
+[HostId]: java-ai-project-01.oss-cn-beijing.aliyuncs.com
+[EC]: 0015-00000101
+[ResponseError]:
+<?xml version="1.0" encoding="UTF-8"?>
+<Error>
+  <Code>NoSuchBucket</Code>
+  <Message>The specified bucket does not exist.</Message>
+  <RequestId>67E3BDDCB980BA35302341AE</RequestId>
+  <HostId>java-ai-project-01.oss-cn-beijing.aliyuncs.com</HostId>
+  <BucketName>java-ai-project-01</BucketName>
+  <EC>0015-00000101</EC>
+  <RecommendDoc>https://api.aliyun.com/troubleshoot?q=0015-00000101</RecommendDoc>
+</Error>
+] with root cause
+com.aliyun.oss.OSSException: The specified bucket does not exist.
+[ErrorCode]: NoSuchBucket
+[RequestId]: 67E3BDDCB980BA35302341AE
+[HostId]: java-ai-project-01.oss-cn-beijing.aliyuncs.com
+[EC]: 0015-00000101
+[ResponseError]:
+<?xml version="1.0" encoding="UTF-8"?>
+<Error>
+  <Code>NoSuchBucket</Code>
+  <Message>The specified bucket does not exist.</Message>
+  <RequestId>67E3BDDCB980BA35302341AE</RequestId>
+  <HostId>java-ai-project-01.oss-cn-beijing.aliyuncs.com</HostId>
+  <BucketName>java-ai-project-01</BucketName>
+  <EC>0015-00000101</EC>
+  <RecommendDoc>https://api.aliyun.com/troubleshoot?q=0015-00000101</RecommendDoc>
+</Error>
+
+	at com.aliyun.oss.common.utils.ExceptionFactory.createOSSException(ExceptionFactory.java:103)
+	at com.aliyun.oss.internal.OSSErrorResponseHandler.handle(OSSErrorResponseHandler.java:92)
+	at com.aliyun.oss.common.comm.ServiceClient.handleResponse(ServiceClient.java:284)
+	at com.aliyun.oss.common.comm.ServiceClient.sendRequestImpl(ServiceClient.java:156)
+	at com.aliyun.oss.common.comm.ServiceClient.sendRequest(ServiceClient.java:85)
+	at com.aliyun.oss.internal.OSSOperation.send(OSSOperation.java:134)
+	at com.aliyun.oss.internal.OSSOperation.doOperation(OSSOperation.java:192)
+	at com.aliyun.oss.internal.OSSOperation.doOperation(OSSOperation.java:153)
+	at com.aliyun.oss.internal.OSSObjectOperation.writeObjectInternal(OSSObjectOperation.java:1173)
+	at com.aliyun.oss.internal.OSSObjectOperation.putObject(OSSObjectOperation.java:107)
+	at com.aliyun.oss.OSSClient.putObject(OSSClient.java:627)
+	at com.aliyun.oss.OSSClient.putObject(OSSClient.java:611)
+	at com.aliyun.oss.OSSClient.putObject(OSSClient.java:605)
+	at com.llf.utils.AliyunOSSOperator.upload(AliyunOSSOperator.java:42)
+	at com.llf.controller.UploadController.upload(UploadController.java:22)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-03-26 03:42:36.615 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-26 03:42:36.620 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-03-26 03:42:39.504 [main] INFO  c.llf.TliasWebManagementApplication - Starting TliasWebManagementApplication using Java 21.0.6 with PID 56448 (C:\code\WebDev-AI-Project02\tlias-web-management\target\classes started by 14764 in C:\code\WebDev-AI-Project02)
+2025-03-26 03:42:39.508 [main] INFO  c.llf.TliasWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-26 03:42:40.170 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-26 03:42:40.178 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-26 03:42:40.180 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-26 03:42:40.180 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-26 03:42:40.212 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-26 03:42:40.212 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 672 ms
+2025-03-26 03:42:40.646 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-26 03:42:40.658 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-03-26 03:42:40.663 [main] INFO  c.llf.TliasWebManagementApplication - Started TliasWebManagementApplication in 1.423 seconds (process running for 2.04)
+2025-03-26 03:42:43.152 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-26 03:42:43.152 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-26 03:42:43.153 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-03-26 03:42:43.184 [http-nio-8080-exec-1] INFO  com.llf.controller.UploadController - 文件上传，证件照.jpg
+2025-03-26 03:42:45.806 [http-nio-8080-exec-1] INFO  com.llf.controller.UploadController - 文件上传OSS, url:https://java-ai-project-1.oss-cn-beijing.aliyuncs.com/2025/03/595f3bbc-10c3-4c06-a9d9-d43131c4bf32.jpg
+2025-03-26 03:45:12.566 [http-nio-8080-exec-5] INFO  com.llf.controller.DeptController - 查询全部的部门数据
+2025-03-26 03:45:12.574 [http-nio-8080-exec-4] INFO  com.llf.controller.EmpController - 分页查询，当前页码：EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)，每页条数：{}
+2025-03-26 03:45:12.579 [http-nio-8080-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-03-26 03:45:12.722 [http-nio-8080-exec-4] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@c22e5a1
+2025-03-26 03:45:12.723 [http-nio-8080-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-03-26 03:45:22.516 [http-nio-8080-exec-7] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' is not supported]
+2025-03-26 03:46:27.493 [http-nio-8080-exec-9] INFO  com.llf.controller.UploadController - 文件上传，证件照.jpg
+2025-03-26 03:46:29.838 [http-nio-8080-exec-9] INFO  com.llf.controller.UploadController - 文件上传OSS, url:https://java-ai-project-1.oss-cn-beijing.aliyuncs.com/2025/03/6193bd80-ee8c-46ef-820f-6c2614b84915.jpg
+2025-03-26 03:50:36.981 [http-nio-8080-exec-10] INFO  com.llf.controller.EmpController - 添加员工：Emp(id=null, username=LucasLi, password=null, name=大帅哥, gender=1, phone=18612236999, job=4, salary=52066, image=https://java-ai-project-1.oss-cn-beijing.aliyuncs.com/2025/03/6193bd80-ee8c-46ef-820f-6c2614b84915.jpg, entryDate=2001-11-24, deptId=4, createTime=null, updateTime=null, deptName=null, exprList=[EmpExpr(id=null, empId=null, begin=2020-07-14, end=2023-12-13, company=Syracuse University, job=校园恶霸), EmpExpr(id=null, empId=null, begin=2024-05-15, end=2025-12-18, company=University of Chicago, job=校园老大哥)])
+2025-03-26 03:50:37.008 [http-nio-8080-exec-8] INFO  com.llf.controller.EmpController - 分页查询，当前页码：EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)，每页条数：{}
+2025-03-26 03:51:04.828 [http-nio-8080-exec-2] INFO  com.llf.controller.DeptController - 查询全部的部门数据
+2025-03-26 03:51:06.162 [http-nio-8080-exec-1] INFO  com.llf.controller.EmpController - 分页查询，当前页码：EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)，每页条数：{}
+2025-03-26 03:51:06.177 [http-nio-8080-exec-3] INFO  com.llf.controller.DeptController - 查询全部的部门数据
+2025-03-26 03:51:14.359 [http-nio-8080-exec-2] INFO  com.llf.controller.DeptController - 查询全部的部门数据
+2025-03-26 03:51:14.360 [http-nio-8080-exec-8] INFO  com.llf.controller.EmpController - 分页查询，当前页码：EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)，每页条数：{}
+2025-03-26 03:51:14.867 [http-nio-8080-exec-1] INFO  com.llf.controller.DeptController - 查询全部的部门数据
+2025-03-26 03:51:15.236 [http-nio-8080-exec-4] INFO  com.llf.controller.DeptController - 查询全部的部门数据
+2025-03-26 03:51:15.236 [http-nio-8080-exec-3] INFO  com.llf.controller.EmpController - 分页查询，当前页码：EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)，每页条数：{}
+2025-03-26 03:54:44.603 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-26 03:54:44.607 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-03-26 03:54:44.610 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-03-26 03:54:44.613 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-03-26 03:58:31.369 [main] INFO  c.llf.TliasWebManagementApplication - Starting TliasWebManagementApplication using Java 21.0.6 with PID 49276 (C:\code\WebDev-AI-Project02\tlias-web-management\target\classes started by 14764 in C:\code\WebDev-AI-Project02)
+2025-03-26 03:58:31.371 [main] INFO  c.llf.TliasWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-26 03:58:32.036 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-26 03:58:32.044 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-26 03:58:32.045 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-26 03:58:32.045 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-26 03:58:32.074 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-26 03:58:32.074 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 672 ms
+2025-03-26 03:58:32.507 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-26 03:58:32.520 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-03-26 03:58:32.525 [main] INFO  c.llf.TliasWebManagementApplication - Started TliasWebManagementApplication in 1.422 seconds (process running for 2.01)
+2025-03-26 03:58:45.004 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-26 03:58:45.004 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-26 03:58:45.005 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-03-26 03:58:45.038 [http-nio-8080-exec-1] INFO  com.llf.controller.UploadController - 文件上传，证件照.jpg
+2025-03-26 03:58:49.013 [http-nio-8080-exec-1] INFO  com.llf.controller.UploadController - 文件上传OSS, url:https://java-ai-project-1.oss-cn-beijing.aliyuncs.com/2025/03/c213b5c6-c623-4bf2-a67d-547fb0a7d2e6.jpg
+2025-03-26 03:59:12.720 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-26 03:59:12.724 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-03-26 04:05:22.207 [main] INFO  c.llf.TliasWebManagementApplication - Starting TliasWebManagementApplication using Java 21.0.6 with PID 32420 (C:\code\WebDev-AI-Project02\tlias-web-management\target\classes started by 14764 in C:\code\WebDev-AI-Project02)
+2025-03-26 04:05:22.208 [main] INFO  c.llf.TliasWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-26 04:05:22.895 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-26 04:05:22.904 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-26 04:05:22.905 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-26 04:05:22.905 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-26 04:05:22.935 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-26 04:05:22.936 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 687 ms
+2025-03-26 04:05:23.399 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-26 04:05:23.411 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-03-26 04:05:23.416 [main] INFO  c.llf.TliasWebManagementApplication - Started TliasWebManagementApplication in 1.458 seconds (process running for 2.098)
+2025-03-26 04:05:25.949 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-26 04:05:25.949 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-26 04:05:25.950 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-03-26 04:05:25.995 [http-nio-8080-exec-2] INFO  com.llf.controller.UploadController - 文件上传，证件照.jpg
+2025-03-26 04:05:28.325 [http-nio-8080-exec-2] INFO  com.llf.controller.UploadController - 文件上传OSS, url:https://java-ai-project-1.oss-cn-beijing.aliyuncs.com/2025/03/ddb39a00-874f-450d-b211-6b81a207d11d.jpg
+2025-03-26 04:05:37.558 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-26 04:05:37.567 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-03-26 05:02:21.113 [main] INFO  c.llf.TliasWebManagementApplication - Starting TliasWebManagementApplication using Java 21.0.6 with PID 41632 (C:\code\WebDev-AI-Project02\tlias-web-management\target\classes started by 14764 in C:\code\WebDev-AI-Project02)
+2025-03-26 05:02:21.118 [main] INFO  c.llf.TliasWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-26 05:02:21.911 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-26 05:02:21.920 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-26 05:02:21.921 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-26 05:02:21.921 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-26 05:02:21.951 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-26 05:02:21.951 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 800 ms
+2025-03-26 05:02:22.487 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-26 05:02:22.500 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-03-26 05:02:22.506 [main] INFO  c.llf.TliasWebManagementApplication - Started TliasWebManagementApplication in 1.675 seconds (process running for 2.344)
+2025-03-26 05:02:38.730 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-26 05:02:38.730 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-26 05:02:38.731 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-03-26 05:02:38.759 [http-nio-8080-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'list' for method parameter type List is not present]
+2025-03-26 05:09:55.414 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-26 05:09:55.419 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-03-26 05:09:59.211 [main] INFO  c.llf.TliasWebManagementApplication - Starting TliasWebManagementApplication using Java 21.0.6 with PID 5452 (C:\code\WebDev-AI-Project02\tlias-web-management\target\classes started by 14764 in C:\code\WebDev-AI-Project02)
+2025-03-26 05:09:59.217 [main] INFO  c.llf.TliasWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-26 05:09:59.987 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-26 05:09:59.998 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-26 05:09:59.999 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-26 05:09:59.999 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-26 05:10:00.038 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-26 05:10:00.038 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 781 ms
+2025-03-26 05:10:00.520 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-26 05:10:00.532 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-03-26 05:10:00.537 [main] INFO  c.llf.TliasWebManagementApplication - Started TliasWebManagementApplication in 1.635 seconds (process running for 2.238)
+2025-03-26 05:10:03.223 [http-nio-8080-exec-5] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-26 05:10:03.224 [http-nio-8080-exec-5] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-26 05:10:03.224 [http-nio-8080-exec-5] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-03-26 05:10:03.252 [http-nio-8080-exec-5] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'list' for method parameter type List is not present]
+2025-03-26 05:11:10.379 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-26 05:11:10.384 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-03-26 05:11:12.182 [main] INFO  c.llf.TliasWebManagementApplication - Starting TliasWebManagementApplication using Java 21.0.6 with PID 27844 (C:\code\WebDev-AI-Project02\tlias-web-management\target\classes started by 14764 in C:\code\WebDev-AI-Project02)
+2025-03-26 05:11:12.184 [main] INFO  c.llf.TliasWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-26 05:11:12.835 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-26 05:11:12.842 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-26 05:11:12.843 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-26 05:11:12.843 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-26 05:11:12.877 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-26 05:11:12.878 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 669 ms
+2025-03-26 05:11:13.327 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-26 05:11:13.344 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-03-26 05:11:13.349 [main] INFO  c.llf.TliasWebManagementApplication - Started TliasWebManagementApplication in 1.453 seconds (process running for 2.142)
+2025-03-26 05:11:18.044 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-26 05:11:18.044 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-26 05:11:18.045 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-03-26 05:11:18.072 [http-nio-8080-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'list' for method parameter type List is not present]
+2025-03-26 05:14:44.210 [http-nio-8080-exec-7] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'list' for method parameter type List is not present]
+2025-03-26 05:14:49.472 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-26 05:14:49.477 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-03-26 05:14:51.061 [main] INFO  c.llf.TliasWebManagementApplication - Starting TliasWebManagementApplication using Java 21.0.6 with PID 35336 (C:\code\WebDev-AI-Project02\tlias-web-management\target\classes started by 14764 in C:\code\WebDev-AI-Project02)
+2025-03-26 05:14:51.062 [main] INFO  c.llf.TliasWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-26 05:14:51.627 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-26 05:14:51.634 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-26 05:14:51.635 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-26 05:14:51.635 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-26 05:14:51.665 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-26 05:14:51.666 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 576 ms
+2025-03-26 05:14:52.101 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-26 05:14:52.112 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-03-26 05:14:52.117 [main] INFO  c.llf.TliasWebManagementApplication - Started TliasWebManagementApplication in 1.315 seconds (process running for 1.896)
+2025-03-26 05:14:55.970 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-26 05:14:55.971 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-26 05:14:55.971 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-03-26 05:14:55.996 [http-nio-8080-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'list' for method parameter type List is not present]
+2025-03-26 05:16:01.829 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-26 05:16:01.834 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-03-26 05:16:04.329 [main] INFO  c.llf.TliasWebManagementApplication - Starting TliasWebManagementApplication using Java 21.0.6 with PID 20380 (C:\code\WebDev-AI-Project02\tlias-web-management\target\classes started by 14764 in C:\code\WebDev-AI-Project02)
+2025-03-26 05:16:04.331 [main] INFO  c.llf.TliasWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-26 05:16:04.988 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-26 05:16:04.996 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-26 05:16:04.997 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-26 05:16:04.998 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-26 05:16:05.028 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-26 05:16:05.028 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 662 ms
+2025-03-26 05:16:05.478 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-26 05:16:05.489 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-03-26 05:16:05.494 [main] INFO  c.llf.TliasWebManagementApplication - Started TliasWebManagementApplication in 1.448 seconds (process running for 2.027)
+2025-03-26 05:16:14.889 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-26 05:16:14.890 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-26 05:16:14.890 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-03-26 05:16:14.915 [http-nio-8080-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'list' for method parameter type List is not present]
+2025-03-26 05:17:26.429 [http-nio-8080-exec-4] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'list' for method parameter type List is not present]
+2025-03-26 05:27:06.284 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-26 05:27:06.292 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-03-26 05:27:08.869 [main] INFO  c.llf.TliasWebManagementApplication - Starting TliasWebManagementApplication using Java 21.0.6 with PID 31904 (C:\code\WebDev-AI-Project02\tlias-web-management\target\classes started by 14764 in C:\code\WebDev-AI-Project02)
+2025-03-26 05:27:08.870 [main] INFO  c.llf.TliasWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-26 05:27:09.449 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-26 05:27:09.457 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-26 05:27:09.463 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-26 05:27:09.463 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-26 05:27:09.501 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-26 05:27:09.501 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 604 ms
+2025-03-26 05:27:09.904 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-26 05:27:09.913 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-03-26 05:27:09.918 [main] INFO  c.llf.TliasWebManagementApplication - Started TliasWebManagementApplication in 1.317 seconds (process running for 1.819)
+2025-03-26 05:28:47.351 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-26 05:28:47.352 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-26 05:28:47.353 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-03-26 05:28:47.390 [http-nio-8080-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'list' for method parameter type List is not present]
+2025-03-26 05:28:54.711 [http-nio-8080-exec-3] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'list' for method parameter type List is not present]
+2025-03-26 05:29:29.819 [http-nio-8080-exec-5] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'list' for method parameter type List is not present]
+2025-03-26 05:35:30.930 [http-nio-8080-exec-8] INFO  com.llf.controller.EmpController - 删除员工：[1, 44]
+2025-03-26 05:35:30.934 [http-nio-8080-exec-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-03-26 05:35:31.101 [http-nio-8080-exec-8] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@188967b0
+2025-03-26 05:35:31.102 [http-nio-8080-exec-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-03-26 05:36:09.476 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-26 05:36:09.481 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-03-26 05:36:09.487 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-03-26 05:36:09.491 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

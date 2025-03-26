@@ -24,7 +24,8 @@ public class EmpServiceImpl implements EmpService {
 
     @Autowired
     private EmpExprMapper empExprMapper;
-@Transactional
+
+    @Transactional
     @Override
     public PageResult<Emp> page(EmpQueryParam empQueryParam) {
         // 设置分页参数
@@ -52,6 +53,14 @@ public class EmpServiceImpl implements EmpService {
             empExprMapper.insertBatch(exprList);
 
         }
+    }
+
+    @Transactional(rollbackFor = {Exception.class})
+    @Override
+    public void delete(List<Integer> list) {
+        empMapper.deleteByIds(list);
+
+        empExprMapper.deleteByEmpIds(list);
     }
 
 

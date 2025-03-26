@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 @RequestMapping("/emps")
 @RestController
@@ -32,7 +34,13 @@ public class EmpController {
         empService.save(emp);
         return Result.success();
     }
+    @DeleteMapping
+    public Result delete(@RequestParam List<Integer> list){
+        log.info("删除员工：{}", list);
+        empService.delete(list);
+        return Result.success();
 
+    }
 
 }
 
