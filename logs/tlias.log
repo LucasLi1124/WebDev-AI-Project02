@@ -122,3 +122,390 @@
 2025-03-27 04:12:54.423 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
 2025-03-27 04:12:54.425 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2025-03-27 04:12:54.429 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-03-27 04:24:37.365 [main] INFO  c.llf.TliasWebManagementApplication - Starting TliasWebManagementApplication using Java 21.0.6 with PID 24644 (C:\code\WebDev-AI-Project02\tlias-web-management\target\classes started by 14764 in C:\code\WebDev-AI-Project02)
+2025-03-27 04:24:37.366 [main] INFO  c.llf.TliasWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-27 04:24:38.020 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-27 04:24:38.028 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-27 04:24:38.029 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-27 04:24:38.029 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-27 04:24:38.062 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-27 04:24:38.062 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 664 ms
+2025-03-27 04:24:38.551 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-27 04:24:38.563 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-03-27 04:24:38.567 [main] INFO  c.llf.TliasWebManagementApplication - Started TliasWebManagementApplication in 1.499 seconds (process running for 2.133)
+2025-03-27 04:24:49.182 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-27 04:24:49.182 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-27 04:24:49.184 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-03-27 04:24:49.205 [http-nio-8080-exec-1] INFO  com.llf.controller.EmpController - 根据id查询员工：3
+2025-03-27 04:24:49.217 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-03-27 04:24:49.412 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@64317d01
+2025-03-27 04:24:49.414 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-03-27 04:24:57.840 [http-nio-8080-exec-2] INFO  com.llf.controller.EmpController - 修改员工信息：Emp(id=3, username=zhangwuji, password=123456, name=张无忌, gender=1, phone=18612236361, job=2, salary=80000, image=https://web-framework.oss-cn-hangzhou.aliyuncs.com/2022-09-02-00-27-53B.jpg, entryDate=2015-01-01, deptId=2, createTime=2023-10-20T16:35:33, updateTime=2025-03-27T04:12:27, deptName=null, exprList=[EmpExpr(id=19, empId=3, begin=2012-07-01, end=2015-06-20, company=中软国际股份有限公司, job=java开发), EmpExpr(id=20, empId=3, begin=2015-07-01, end=2019-03-03, company=百度科技股份有限公司, job=java开发), EmpExpr(id=21, empId=3, begin=2019-03-15, end=2023-03-01, company=阿里巴巴科技股份有限公司, job=架构师)])
+2025-03-27 04:24:58.231 [http-nio-8080-exec-2] ERROR c.l.exception.GlobalExceptionHandler - 服务器发生异常：
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '18612236361' for key 'emp.phone'
+### The error may exist in com/llf/mapper/EmpMapper.xml
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: update emp          SET username = ?,             password = ?,             name = ?,             gender = ?,             phone = ?,             job = ?,             salary = ?,             image = ?,             entry_date = ?,             dept_id = ?,             update_time = ?          where id = ?
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '18612236361' for key 'emp.phone'
+; Duplicate entry '18612236361' for key 'emp.phone'
+2025-03-27 04:25:12.312 [http-nio-8080-exec-3] INFO  com.llf.controller.EmpController - 修改员工信息：Emp(id=3, username=zhangwuji, password=123456, name=张无忌, gender=1, phone=18612236361, job=2, salary=80000, image=https://web-framework.oss-cn-hangzhou.aliyuncs.com/2022-09-02-00-27-53B.jpg, entryDate=2015-01-01, deptId=2, createTime=2023-10-20T16:35:33, updateTime=2025-03-27T04:12:27, deptName=null, exprList=[EmpExpr(id=19, empId=3, begin=2012-07-01, end=2015-06-20, company=中软国际股份有限公司, job=java开发), EmpExpr(id=20, empId=3, begin=2015-07-01, end=2019-03-03, company=百度科技股份有限公司, job=java开发), EmpExpr(id=21, empId=3, begin=2019-03-15, end=2023-03-01, company=阿里巴巴科技股份有限公司, job=架构师)])
+2025-03-27 04:25:12.319 [http-nio-8080-exec-3] ERROR c.l.exception.GlobalExceptionHandler - 服务器发生异常：
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '18612236361' for key 'emp.phone'
+### The error may exist in com/llf/mapper/EmpMapper.xml
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: update emp          SET username = ?,             password = ?,             name = ?,             gender = ?,             phone = ?,             job = ?,             salary = ?,             image = ?,             entry_date = ?,             dept_id = ?,             update_time = ?          where id = ?
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '18612236361' for key 'emp.phone'
+; Duplicate entry '18612236361' for key 'emp.phone'
+2025-03-27 04:27:35.203 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-27 04:27:35.206 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-03-27 04:27:35.209 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-03-27 04:27:35.213 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-03-27 04:31:55.180 [main] INFO  c.llf.TliasWebManagementApplication - Starting TliasWebManagementApplication using Java 21.0.6 with PID 6708 (C:\code\WebDev-AI-Project02\tlias-web-management\target\classes started by 14764 in C:\code\WebDev-AI-Project02)
+2025-03-27 04:31:55.182 [main] INFO  c.llf.TliasWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-27 04:31:55.791 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-27 04:31:55.799 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-27 04:31:55.800 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-27 04:31:55.800 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-27 04:31:55.829 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-27 04:31:55.830 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 617 ms
+2025-03-27 04:31:56.258 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-27 04:31:56.269 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-03-27 04:31:56.274 [main] INFO  c.llf.TliasWebManagementApplication - Started TliasWebManagementApplication in 1.339 seconds (process running for 1.91)
+2025-03-27 04:32:00.464 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-27 04:32:00.464 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-27 04:32:00.464 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-03-27 04:32:00.486 [http-nio-8080-exec-1] INFO  com.llf.controller.EmpController - 根据id查询员工：3
+2025-03-27 04:32:00.501 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-03-27 04:32:00.705 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5246e94b
+2025-03-27 04:32:00.707 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-03-27 04:32:07.519 [http-nio-8080-exec-2] INFO  com.llf.controller.EmpController - 修改员工信息：Emp(id=3, username=zhangwuji, password=123456, name=张无忌, gender=1, phone=18612236361, job=2, salary=80000, image=https://web-framework.oss-cn-hangzhou.aliyuncs.com/2022-09-02-00-27-53B.jpg, entryDate=2015-01-01, deptId=2, createTime=2023-10-20T16:35:33, updateTime=2025-03-27T04:12:27, deptName=null, exprList=[EmpExpr(id=19, empId=3, begin=2012-07-01, end=2015-06-20, company=中软国际股份有限公司, job=java开发), EmpExpr(id=20, empId=3, begin=2015-07-01, end=2019-03-03, company=百度科技股份有限公司, job=java开发), EmpExpr(id=21, empId=3, begin=2019-03-15, end=2023-03-01, company=阿里巴巴科技股份有限公司, job=架构师)])
+2025-03-27 04:32:07.897 [http-nio-8080-exec-2] ERROR c.l.exception.GlobalExceptionHandler - 数据库字段重复：
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '18612236361' for key 'emp.phone'
+### The error may exist in com/llf/mapper/EmpMapper.xml
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: update emp          SET username = ?,             password = ?,             name = ?,             gender = ?,             phone = ?,             job = ?,             salary = ?,             image = ?,             entry_date = ?,             dept_id = ?,             update_time = ?          where id = ?
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '18612236361' for key 'emp.phone'
+; Duplicate entry '18612236361' for key 'emp.phone'
+2025-03-27 05:37:32.269 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-27 05:37:32.275 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-03-27 05:37:32.280 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-03-27 05:37:32.284 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-03-27 16:11:02.073 [main] INFO  c.llf.TliasWebManagementApplication - Starting TliasWebManagementApplication using Java 21.0.6 with PID 30260 (C:\code\WebDev-AI-Project02\tlias-web-management\target\classes started by 14764 in C:\code\WebDev-AI-Project02)
+2025-03-27 16:11:02.074 [main] INFO  c.llf.TliasWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-27 16:11:03.084 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-27 16:11:03.093 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-27 16:11:03.101 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-27 16:11:03.101 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-27 16:11:03.132 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-27 16:11:03.132 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1013 ms
+2025-03-27 16:11:03.619 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-27 16:11:03.630 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-03-27 16:11:03.635 [main] INFO  c.llf.TliasWebManagementApplication - Started TliasWebManagementApplication in 1.87 seconds (process running for 3.098)
+2025-03-27 16:11:04.630 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-27 16:11:04.630 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-27 16:11:04.631 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-03-27 16:11:04.651 [http-nio-8080-exec-4] ERROR c.l.exception.GlobalExceptionHandler - 服务器发生异常：No static resource clazzs/list.
+2025-03-27 16:11:04.651 [http-nio-8080-exec-1] ERROR c.l.exception.GlobalExceptionHandler - 服务器发生异常：No static resource students.
+2025-03-27 16:11:07.185 [http-nio-8080-exec-5] ERROR c.l.exception.GlobalExceptionHandler - 服务器发生异常：No static resource clazzs.
+2025-03-27 16:11:07.201 [http-nio-8080-exec-2] ERROR c.l.exception.GlobalExceptionHandler - 服务器发生异常：Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; For input string: "list"
+2025-03-27 16:11:07.832 [http-nio-8080-exec-3] ERROR c.l.exception.GlobalExceptionHandler - 服务器发生异常：No static resource clazzs/list.
+2025-03-27 16:11:07.832 [http-nio-8080-exec-10] ERROR c.l.exception.GlobalExceptionHandler - 服务器发生异常：No static resource students.
+2025-03-27 16:11:09.610 [http-nio-8080-exec-7] INFO  com.llf.controller.DeptController - 查询全部的部门数据
+2025-03-27 16:11:09.635 [http-nio-8080-exec-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-03-27 16:11:09.929 [http-nio-8080-exec-7] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3436562e
+2025-03-27 16:11:09.930 [http-nio-8080-exec-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-03-27 16:11:10.233 [http-nio-8080-exec-9] INFO  com.llf.controller.DeptController - 查询全部的部门数据
+2025-03-27 16:11:10.248 [http-nio-8080-exec-8] INFO  com.llf.controller.EmpController - 分页查询，当前页码：EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)，每页条数：{}
+2025-03-27 16:11:25.601 [http-nio-8080-exec-6] INFO  com.llf.controller.EmpController - 分页查询，当前页码：EmpQueryParam(page=2, pageSize=10, name=, gender=null, begin=null, end=null)，每页条数：{}
+2025-03-27 16:11:28.586 [http-nio-8080-exec-1] INFO  com.llf.controller.EmpController - 分页查询，当前页码：EmpQueryParam(page=3, pageSize=10, name=, gender=null, begin=null, end=null)，每页条数：{}
+2025-03-27 16:11:29.161 [http-nio-8080-exec-4] INFO  com.llf.controller.EmpController - 分页查询，当前页码：EmpQueryParam(page=4, pageSize=10, name=, gender=null, begin=null, end=null)，每页条数：{}
+2025-03-27 16:11:31.221 [http-nio-8080-exec-5] INFO  com.llf.controller.EmpController - 分页查询，当前页码：EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)，每页条数：{}
+2025-03-27 16:11:53.027 [http-nio-8080-exec-2] INFO  com.llf.controller.EmpController - 根据id查询员工：45
+2025-03-27 16:13:01.542 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-27 16:13:01.550 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-03-27 16:13:01.554 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-03-27 16:13:01.562 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-03-27 16:13:05.902 [main] INFO  c.llf.TliasWebManagementApplication - Starting TliasWebManagementApplication using Java 21.0.6 with PID 23184 (C:\code\WebDev-AI-Project02\tlias-web-management\target\classes started by 14764 in C:\code\WebDev-AI-Project02)
+2025-03-27 16:13:05.903 [main] INFO  c.llf.TliasWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-27 16:13:06.497 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-27 16:13:06.506 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-27 16:13:06.507 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-27 16:13:06.507 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-27 16:13:06.534 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-27 16:13:06.535 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 609 ms
+2025-03-27 16:13:06.989 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-27 16:13:07.000 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-03-27 16:13:07.005 [main] INFO  c.llf.TliasWebManagementApplication - Started TliasWebManagementApplication in 1.356 seconds (process running for 1.966)
+2025-03-27 16:13:15.963 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-27 16:13:15.963 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-27 16:13:15.964 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-03-27 16:13:15.981 [http-nio-8080-exec-1] INFO  com.llf.controller.DeptController - 查询全部的部门数据
+2025-03-27 16:13:15.990 [http-nio-8080-exec-2] INFO  com.llf.controller.EmpController - 分页查询，当前页码：EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)，每页条数：{}
+2025-03-27 16:13:15.992 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-03-27 16:13:16.209 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5d62184a
+2025-03-27 16:13:16.211 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-03-27 16:13:19.403 [http-nio-8080-exec-5] INFO  com.llf.controller.EmpController - 分页查询，当前页码：EmpQueryParam(page=2, pageSize=10, name=, gender=null, begin=null, end=null)，每页条数：{}
+2025-03-27 16:13:20.811 [http-nio-8080-exec-4] INFO  com.llf.controller.EmpController - 分页查询，当前页码：EmpQueryParam(page=3, pageSize=10, name=, gender=null, begin=null, end=null)，每页条数：{}
+2025-03-27 16:13:21.564 [http-nio-8080-exec-3] INFO  com.llf.controller.EmpController - 分页查询，当前页码：EmpQueryParam(page=4, pageSize=10, name=, gender=null, begin=null, end=null)，每页条数：{}
+2025-03-27 16:13:23.072 [http-nio-8080-exec-6] INFO  com.llf.controller.EmpController - 分页查询，当前页码：EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)，每页条数：{}
+2025-03-27 16:14:43.661 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-27 16:14:43.665 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-03-27 16:14:43.667 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-03-27 16:14:43.672 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-03-27 16:53:44.824 [main] INFO  c.llf.TliasWebManagementApplication - Starting TliasWebManagementApplication using Java 21.0.6 with PID 18252 (C:\code\WebDev-AI-Project02\tlias-web-management\target\classes started by 14764 in C:\code\WebDev-AI-Project02)
+2025-03-27 16:53:44.825 [main] INFO  c.llf.TliasWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-27 16:53:45.483 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-27 16:53:45.491 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-27 16:53:45.492 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-27 16:53:45.492 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-27 16:53:45.520 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-27 16:53:45.520 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 663 ms
+2025-03-27 16:53:45.800 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'empController' method 
+com.llf.controller.EmpController#getjobs(jobOption)
+to {GET [/emps]}: There is already 'empController' bean method
+com.llf.controller.EmpController#page(EmpQueryParam) mapped.
+2025-03-27 16:53:45.802 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-03-27 16:53:45.808 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-27 16:53:45.821 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'empController' method 
+com.llf.controller.EmpController#getjobs(jobOption)
+to {GET [/emps]}: There is already 'empController' bean method
+com.llf.controller.EmpController#page(EmpQueryParam) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1812)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:347)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1155)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1121)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1056)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.llf.TliasWebManagementApplication.main(TliasWebManagementApplication.java:10)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'empController' method 
+com.llf.controller.EmpController#getjobs(jobOption)
+to {GET [/emps]}: There is already 'empController' bean method
+com.llf.controller.EmpController#page(EmpQueryParam) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:331)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:509)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:84)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$2(AbstractHandlerMethodMapping.java:298)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:986)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:296)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:265)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:224)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:212)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:239)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	... 18 common frames omitted
+2025-03-27 16:54:42.149 [main] INFO  c.llf.TliasWebManagementApplication - Starting TliasWebManagementApplication using Java 21.0.6 with PID 6200 (C:\code\WebDev-AI-Project02\tlias-web-management\target\classes started by 14764 in C:\code\WebDev-AI-Project02)
+2025-03-27 16:54:42.150 [main] INFO  c.llf.TliasWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-27 16:54:42.697 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-27 16:54:42.703 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-27 16:54:42.704 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-27 16:54:42.704 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-27 16:54:42.729 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-27 16:54:42.729 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 555 ms
+2025-03-27 16:54:42.989 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'empController' method 
+com.llf.controller.EmpController#page(EmpQueryParam)
+to {GET [/emps]}: There is already 'empController' bean method
+com.llf.controller.EmpController#getjobs(jobOption) mapped.
+2025-03-27 16:54:42.991 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-03-27 16:54:42.997 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-27 16:54:43.007 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'empController' method 
+com.llf.controller.EmpController#page(EmpQueryParam)
+to {GET [/emps]}: There is already 'empController' bean method
+com.llf.controller.EmpController#getjobs(jobOption) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1812)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:347)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1155)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1121)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1056)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.llf.TliasWebManagementApplication.main(TliasWebManagementApplication.java:10)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'empController' method 
+com.llf.controller.EmpController#page(EmpQueryParam)
+to {GET [/emps]}: There is already 'empController' bean method
+com.llf.controller.EmpController#getjobs(jobOption) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:331)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:509)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:84)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$2(AbstractHandlerMethodMapping.java:298)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:986)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:296)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:265)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:224)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:212)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:239)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	... 18 common frames omitted
+2025-03-27 16:58:30.252 [main] INFO  c.llf.TliasWebManagementApplication - Starting TliasWebManagementApplication using Java 21.0.6 with PID 14860 (C:\code\WebDev-AI-Project02\tlias-web-management\target\classes started by 14764 in C:\code\WebDev-AI-Project02)
+2025-03-27 16:58:30.253 [main] INFO  c.llf.TliasWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-27 16:58:30.885 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-27 16:58:30.893 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-27 16:58:30.894 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-27 16:58:30.894 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-27 16:58:30.922 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-27 16:58:30.923 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 638 ms
+2025-03-27 16:58:31.191 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'empController' method 
+com.llf.controller.EmpController#getjobs(jobOption)
+to {GET [/emps]}: There is already 'empController' bean method
+com.llf.controller.EmpController#page(EmpQueryParam) mapped.
+2025-03-27 16:58:31.193 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-03-27 16:58:31.199 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-27 16:58:31.210 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'empController' method 
+com.llf.controller.EmpController#getjobs(jobOption)
+to {GET [/emps]}: There is already 'empController' bean method
+com.llf.controller.EmpController#page(EmpQueryParam) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1812)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:347)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1155)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1121)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1056)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.llf.TliasWebManagementApplication.main(TliasWebManagementApplication.java:10)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'empController' method 
+com.llf.controller.EmpController#getjobs(jobOption)
+to {GET [/emps]}: There is already 'empController' bean method
+com.llf.controller.EmpController#page(EmpQueryParam) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:331)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:509)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:84)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$2(AbstractHandlerMethodMapping.java:298)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:986)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:296)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:265)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:224)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:212)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:239)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	... 18 common frames omitted
+2025-03-27 17:21:16.849 [main] INFO  c.llf.TliasWebManagementApplication - Starting TliasWebManagementApplication using Java 21.0.6 with PID 8548 (C:\code\WebDev-AI-Project02\tlias-web-management\target\classes started by 14764 in C:\code\WebDev-AI-Project02)
+2025-03-27 17:21:16.851 [main] INFO  c.llf.TliasWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-27 17:21:17.559 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-27 17:21:17.566 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-27 17:21:17.567 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-27 17:21:17.567 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-27 17:21:17.596 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-27 17:21:17.596 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 714 ms
+2025-03-27 17:21:18.043 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-27 17:21:18.056 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-03-27 17:21:18.061 [main] INFO  c.llf.TliasWebManagementApplication - Started TliasWebManagementApplication in 1.446 seconds (process running for 2.009)
+2025-03-27 17:21:54.856 [http-nio-8080-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-27 17:21:54.856 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-27 17:21:54.857 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-03-27 17:21:54.873 [http-nio-8080-exec-3] INFO  com.llf.controller.ReportController - 查询所有职位:
+2025-03-27 17:21:54.885 [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-03-27 17:21:55.094 [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@54087e01
+2025-03-27 17:21:55.096 [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-03-27 17:21:55.137 [http-nio-8080-exec-3] ERROR c.l.exception.GlobalExceptionHandler - 服务器发生异常：class java.lang.String cannot be cast to class java.util.Objects (java.lang.String and java.util.Objects are in module java.base of loader 'bootstrap')
+2025-03-27 17:22:14.356 [http-nio-8080-exec-2] INFO  com.llf.controller.ReportController - 查询所有职位:
+2025-03-27 17:22:14.359 [http-nio-8080-exec-2] ERROR c.l.exception.GlobalExceptionHandler - 服务器发生异常：class java.lang.String cannot be cast to class java.util.Objects (java.lang.String and java.util.Objects are in module java.base of loader 'bootstrap')
+2025-03-27 17:23:56.979 [http-nio-8080-exec-4] INFO  com.llf.controller.ReportController - 查询所有职位:
+2025-03-27 17:23:56.983 [http-nio-8080-exec-4] ERROR c.l.exception.GlobalExceptionHandler - 服务器发生异常：class java.lang.String cannot be cast to class java.util.Objects (java.lang.String and java.util.Objects are in module java.base of loader 'bootstrap')
+2025-03-27 17:24:31.955 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-27 17:24:31.959 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-03-27 17:24:31.962 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-03-27 17:24:31.966 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-03-27 17:24:34.857 [main] INFO  c.llf.TliasWebManagementApplication - Starting TliasWebManagementApplication using Java 21.0.6 with PID 39708 (C:\code\WebDev-AI-Project02\tlias-web-management\target\classes started by 14764 in C:\code\WebDev-AI-Project02)
+2025-03-27 17:24:34.858 [main] INFO  c.llf.TliasWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-27 17:24:35.461 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-27 17:24:35.470 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-27 17:24:35.471 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-27 17:24:35.471 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-27 17:24:35.501 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-27 17:24:35.501 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 611 ms
+2025-03-27 17:24:36.051 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-27 17:24:36.062 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-03-27 17:24:36.066 [main] INFO  c.llf.TliasWebManagementApplication - Started TliasWebManagementApplication in 1.454 seconds (process running for 1.99)
+2025-03-27 17:24:42.544 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-27 17:24:42.544 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-27 17:24:42.545 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-03-27 17:24:42.563 [http-nio-8080-exec-2] INFO  com.llf.controller.ReportController - 查询所有职位:
+2025-03-27 17:24:42.576 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-03-27 17:24:42.785 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3121c3f0
+2025-03-27 17:24:42.786 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-03-27 17:25:47.057 [http-nio-8080-exec-5] INFO  com.llf.controller.DeptController - 查询全部的部门数据
+2025-03-27 17:25:47.070 [http-nio-8080-exec-4] INFO  com.llf.controller.EmpController - 分页查询，当前页码：EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)，每页条数：{}
+2025-03-27 17:25:48.329 [http-nio-8080-exec-6] INFO  com.llf.controller.ReportController - 查询所有职位:
+2025-03-27 17:25:48.333 [http-nio-8080-exec-7] ERROR c.l.exception.GlobalExceptionHandler - 服务器发生异常：No static resource report/empGenderData.
+2025-03-27 17:30:13.159 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-27 17:30:13.162 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-03-27 17:30:13.164 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-03-27 17:30:13.168 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-03-27 18:20:00.722 [main] INFO  c.llf.TliasWebManagementApplication - Starting TliasWebManagementApplication using Java 21.0.6 with PID 13092 (C:\code\WebDev-AI-Project02\tlias-web-management\target\classes started by 14764 in C:\code\WebDev-AI-Project02)
+2025-03-27 18:20:00.726 [main] INFO  c.llf.TliasWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-27 18:20:01.391 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-27 18:20:01.398 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-27 18:20:01.400 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-27 18:20:01.400 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-27 18:20:01.430 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-27 18:20:01.430 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 672 ms
+2025-03-27 18:20:01.874 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-27 18:20:01.884 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-03-27 18:20:01.888 [main] INFO  c.llf.TliasWebManagementApplication - Started TliasWebManagementApplication in 1.413 seconds (process running for 2.012)
+2025-03-27 18:20:20.770 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-27 18:20:20.771 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-27 18:20:20.771 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-03-27 18:20:20.788 [http-nio-8080-exec-2] INFO  com.llf.controller.ReportController - 查询所有性别: 
+2025-03-27 18:20:20.802 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-03-27 18:20:21.028 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5bf7e45f
+2025-03-27 18:20:21.030 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-03-27 18:21:04.334 [http-nio-8080-exec-3] INFO  com.llf.controller.ReportController - 查询所有职位: 
+2025-03-27 18:21:04.334 [http-nio-8080-exec-4] INFO  com.llf.controller.ReportController - 查询所有性别: 
+2025-03-27 18:36:15.246 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-27 18:36:15.251 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-03-27 18:36:15.252 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-03-27 18:36:15.257 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

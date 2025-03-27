@@ -7,6 +7,8 @@ import org.apache.ibatis.annotations.*;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.Map;
+import java.util.Objects;
 
 @Mapper
 public interface EmpMapper {
@@ -29,4 +31,9 @@ public interface EmpMapper {
     Emp getName(Integer id);
 
     void updateById(Emp emp);
+
+    List<Map<String, Object>> countEmpJobData();
+
+
+    List<Map<String, Object>> countEmpGenderData();
 }

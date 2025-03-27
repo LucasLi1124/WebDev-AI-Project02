@@ -1,11 +1,10 @@
 package com.llf.service;
 
-import com.llf.pojo.Emp;
-import com.llf.pojo.EmpExpr;
-import com.llf.pojo.EmpQueryParam;
-import com.llf.pojo.PageResult;
+import com.llf.pojo.*;
 
 import java.util.List;
+import java.util.Map;
+import java.util.Objects;
 
 public interface EmpService {
 
@@ -18,4 +17,6 @@ public interface EmpService {
     Emp genName(Integer id);
 
     void updateEmpByID(Emp emp);
+
+
 }
