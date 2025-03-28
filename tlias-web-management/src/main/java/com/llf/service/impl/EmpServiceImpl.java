@@ -85,7 +85,10 @@ public class EmpServiceImpl implements EmpService {
         }
     }
 
-
+    @Override
+    public List<Emp> Allinfo() {
+        return empMapper.Allinfo();
+    }
 
 
 }

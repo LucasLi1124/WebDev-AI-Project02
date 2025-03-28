@@ -19,4 +19,5 @@ public interface EmpService {
     void updateEmpByID(Emp emp);
 
 
+    List<Emp> Allinfo();
 }

@@ -25,7 +25,7 @@ public class EmpController {
 
     @GetMapping
     public Result page(EmpQueryParam empQueryParam) {
-        log.info("分页查询，当前页码：{}，每页条数：{}", empQueryParam);
+        log.info("分页查询，当前页码：{}", empQueryParam);
         PageResult<Emp> pageResult = empService.page(empQueryParam);
         return Result.success(pageResult);
 
@@ -54,6 +54,12 @@ public class EmpController {
         log.info("修改员工信息：{}", emp);
         empService.updateEmpByID(emp);
         return Result.success();
+    }
+    @GetMapping("/list")
+    public Result All(){
+        log.info("查询所有员工信息");
+        List<Emp> list = empService.Allinfo();
+        return Result.success(list);
     }
 
 
