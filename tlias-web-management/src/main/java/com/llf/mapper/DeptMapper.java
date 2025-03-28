@@ -7,7 +7,6 @@ import org.apache.ibatis.annotations.*;
 import java.util.List;
 
 @Mapper
-
 public interface DeptMapper {
     @Select("Select id, name, create_time, update_time from dept order by update_time DESC")
     List<Dept> findAll();
