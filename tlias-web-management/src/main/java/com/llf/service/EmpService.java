@@ -20,4 +20,6 @@ public interface EmpService {
 
 
     List<Emp> Allinfo();
+
+    LoginInfo login(Emp emp);
 }

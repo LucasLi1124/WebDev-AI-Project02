@@ -40,5 +40,6 @@ public interface EmpMapper {
     @Select("SELECT * from emp")
     List<Emp> Allinfo();
 
-
+@Select("select id, username, name from emp where username = #{username} and password = #{password}")
+    Emp loginByUserNameAndPassWord(Emp emp);
 }
